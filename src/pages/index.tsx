@@ -14,7 +14,7 @@ const HomePage = (props: HomePageProps) => {
   return (
     <Sheet
       variant="soft"
-      sx={(theme) => ({ px: 2, py: 1, borderRadius: theme.spacing(1) })}
+      sx={(theme) => ({ px: 5, py: 5, borderRadius: theme.spacing(1) })}
     >
       <Box>
         Under Construction

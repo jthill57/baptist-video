@@ -68,7 +68,7 @@ const AppPage = (props: PropsWithChildren) => {
                   direction="row"
                   flexWrap="wrap"
                   alignItems="center"
-                  spacing={1}
+                  spacing={5}
                 >
                   <Link
                     href={getHomeRoute()}
@@ -91,8 +91,75 @@ const AppPage = (props: PropsWithChildren) => {
                         {t(`appNameLogo2`)}
                       </Typography>
                     </Typography>
-                    <Typography level="body3">{t(`slogan`)}</Typography>
+                    {/* <Typography level="body3">{t(`slogan`)}</Typography> */}
                   </Link>
+                  <Stack
+                    direction="row"
+                    flexWrap="wrap"
+                    alignItems="center"
+                    spacing={5}
+                  >
+                    <Link
+                      href={getHomeRoute()}
+                      style={{
+                        textDecoration: `none`,
+                      }}
+                    >
+                      <Typography
+                        level="body1"
+                        sx={{
+                          cursor: `pointer`,
+                        }}
+                      >
+                        Sermons
+                      </Typography>
+                    </Link>
+                    <Link
+                      href={getHomeRoute()}
+                      style={{
+                        textDecoration: `none`,
+                      }}
+                    >
+                      <Typography
+                        level="body1"
+                        sx={{
+                          cursor: `pointer`,
+                        }}
+                      >
+                        Clips
+                      </Typography>
+                    </Link>
+                    <Link
+                      href={getHomeRoute()}
+                      style={{
+                        textDecoration: `none`,
+                      }}
+                    >
+                      <Typography
+                        level="body1"
+                        sx={{
+                          cursor: `pointer`,
+                        }}
+                      >
+                        Documentaries
+                      </Typography>
+                    </Link>
+                    <Link
+                      href={getHomeRoute()}
+                      style={{
+                        textDecoration: `none`,
+                      }}
+                    >
+                      <Typography
+                        level="body1"
+                        sx={{
+                          cursor: `pointer`,
+                        }}
+                      >
+                        Other
+                      </Typography>
+                    </Link>
+                  </Stack>
                   <Box sx={{ flex: 1 }} />
 
                   {session.status !== `authenticated` && <ThemeModeToggle />}
