@@ -21,6 +21,7 @@ const ThemeModeToggle = (props: IconButtonProps) => {
   return (
     <IconButton
       variant="plain"
+      color="neutral"
       onClick={() => setMode(mode === `dark` ? `light` : `dark`)}
       {...props}
     >

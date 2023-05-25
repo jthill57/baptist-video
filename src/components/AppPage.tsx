@@ -82,7 +82,14 @@ const AppPage = (props: PropsWithChildren) => {
                         cursor: `pointer`,
                       }}
                     >
-                      {t(`appName`)}
+                      {t(`appNameLogo`)}
+                      <Typography
+                        sx={{
+                          color: '#F73718',
+                        }}
+                      >
+                        {t(`appNameLogo2`)}
+                      </Typography>
                     </Typography>
                     <Typography level="body3">{t(`slogan`)}</Typography>
                   </Link>
@@ -90,18 +97,18 @@ const AppPage = (props: PropsWithChildren) => {
 
                   {session.status !== `authenticated` && <ThemeModeToggle />}
 
-                  <IconButton
+                  {/* <IconButton
                     onClick={() => {
                       window.open(t(`learnMoreUrl`), `_blank`);
                     }}
                     variant="plain"
                   >
                     <GitHub />
-                  </IconButton>
+                  </IconButton> */}
 
-                  {session.status !== `authenticated` && (
+                  {/* {session.status !== `authenticated` && (
                     <>
-                      <Button onClick={() => setSignInDialogOpen(true)}>
+                      <Button variant="plain" onClick={() => setSignInDialogOpen(true)}>
                         {t(`signIn`)}
                       </Button>
                     </>
@@ -110,7 +117,7 @@ const AppPage = (props: PropsWithChildren) => {
                     <>
                       <UserMenu />
                     </>
-                  )}
+                  )} */}
                 </Stack>
                 <Divider sx={{ mt: 2 }} />
               </Sheet>
