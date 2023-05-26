@@ -1,10 +1,6 @@
 import { GetStaticProps } from 'next';
 import { Box, Sheet } from '@mui/joy';
 import { withTranslations } from '@/util/i18n/withTranslations';
-import { join } from 'path';
-import { existsSync, readFileSync } from 'fs';
-import { remark } from 'remark';
-import html from 'remark-html';
 
 export interface HomePageProps {
   contentHtml: string;
