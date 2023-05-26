@@ -6,14 +6,14 @@ export interface HomePageProps {
   contentHtml: string;
 }
 
-const HomePage = (props: HomePageProps) => {
+const HomePage = () => {
   return (
     <Sheet
       variant="soft"
       sx={(theme) => ({ px: 5, py: 5, borderRadius: theme.spacing(1) })}
     >
       <Box>
-        Under Construction
+        {`Under Construction`}
       </Box>
     </Sheet>
   );
