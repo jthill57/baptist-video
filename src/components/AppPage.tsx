@@ -1,20 +1,14 @@
-import {
-  Box,
-  Divider,
-  Sheet,
-  Stack,
-  Typography,
-} from '@mui/joy';
+import { Box, Divider, Sheet, Stack, Typography } from '@mui/joy';
 import { PropsWithChildren, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import ThemeModeToggle from './ThemeModeToggle';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import Head from 'next/head';
-import UserMenu from './UserMenu';
+// import UserMenu from './UserMenu';
 import { getHomeRoute } from '@/util/routes';
 import dynamic from 'next/dynamic';
-import { GitHub } from '@mui/icons-material';
+// import { GitHub } from '@mui/icons-material';
 
 const AppToaster = dynamic(() => import(`@/components/AppToaster`), {
   ssr: true,
