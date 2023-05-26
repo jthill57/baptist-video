@@ -77,7 +77,7 @@ const AppPage = (props: PropsWithChildren) => {
                       {t(`appNameLogo`)}
                       <Typography
                         sx={{
-                          color: '#F73718',
+                          color: `#F73718`,
                         }}
                       >
                         {t(`appNameLogo2`)}
