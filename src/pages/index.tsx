@@ -12,9 +12,7 @@ const HomePage = () => {
       variant="soft"
       sx={(theme) => ({ px: 5, py: 5, borderRadius: theme.spacing(1) })}
     >
-      <Box>
-        {`Under Construction`}
-      </Box>
+      <Box>Under Construction</Box>
     </Sheet>
   );
 };
